@@ -1,0 +1,7 @@
+you have to write: 
+
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+those two dots means the folder before, so it loads
+the folder that it's in the other folder so I don't
+have to create new ones
