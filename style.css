@@ -114,14 +114,14 @@ div
 
 .column-middle
 {
-    flex:calc(100% / 3);
+    flex:33%;
     padding-left: 29px;
     padding-right:25px;
 }
 
 .column-right
 {
-    flex:calc(100% / 3);
+    flex:33%;
     padding-left:35px;
     padding-right:3px;
 
