@@ -34,7 +34,7 @@ video
 img
 {
     margin-top: -14px;
-    margin-bottom: -14px; 
+    margin-bottom: -14px;
 }
 
 /* First child means the first paragraph of a page */
@@ -68,7 +68,7 @@ img
 div
 {
     background-color: rgb(255, 255, 255);
-   
+
 }
 .box-of-columns
 {
@@ -105,7 +105,7 @@ div
     flex: 40%;
     padding-left:14px;
     padding-right:18px;
-   
+
 }
 
 .column-left
@@ -128,8 +128,6 @@ div
     flex:calc(100% / 3);
     padding-left:35px;
     padding-right:3px;
-
-   
 }
 
 img
@@ -156,13 +154,13 @@ img
 .title
 {
     font-size: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .title2
 {
     font-size: 20px;
-    text-align:left; 
+    text-align:left;
 }
 
 /* link color */
@@ -171,7 +169,7 @@ a {
     color:rgb(83, 83, 83);
     text-decoration:none;
   }
-  
+
   a:hover { color:rgb(100,200,200); }
 
   /* sticky side bar */
@@ -187,11 +185,10 @@ a {
     padding-top: 120px;
     margin-left: 30px;
   }
-  
+
   /* sidebar text font */
 p.p2
 {
-
   font-size: 17px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -200,12 +197,10 @@ p.p2
     color:rgb(83, 83, 83);
 
     text-size-adjust: none;
-
 }
 
 p.p3
 {
-
   font-size: 17px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -215,12 +210,10 @@ p.p3
     color:rgb(83, 83, 83);
 
     text-size-adjust: none;
-
 }
 
 p.p4
 {
-
   font-size: 17px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -230,5 +223,4 @@ p.p4
     color:rgb(83, 83, 83);
 
     text-size-adjust: none;
-
 }
