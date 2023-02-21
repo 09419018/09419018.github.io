@@ -57,11 +57,11 @@ gosgos index:
         </p>
 
         <p class="p3">
-            <a href="#A6">Location</a>
+            <a href="#A6">bosses</a>
         </p>
 
         <p class="p3">
-            <a href="#A7">Bosses invulnerabilites</a>
+            <a href="#A7">locationss</a>
         </p>
 
         <p class="p2">
