@@ -37,39 +37,67 @@ gosgos index:
     <div class="sidebar">
 
         <p class="p2">
-            <a href="#A1"><b>PLAYTHROUGH</b></a>
+            <a href="#A1"><b>REGION DIFFERENCES</b></a>
         </p>
 
         <p class="p2">
-            <a href="#A2"><b>CHEATS & CODES</b></a>
+            <a href="#A2"><b>GAME BASICS</b></a>
         </p>
 
         <p class="p3">
-            <a href="#A3">STAGE 1</a>
+            <a href="#A3">How to kill arremers</a>
+        </p>
+
+        <p class="p2">
+            <a href="#A4">ITEMS & WEAPONS</a>
         </p>
 
         <p class="p3">
-            <a href="#A4">STAGE 2</a>
+            <a href="#A5">Score</a>
         </p>
 
         <p class="p3">
-            <a href="#A5">STAGE 3</a>
+            <a href="#A6">Location</a>
         </p>
 
         <p class="p3">
-            <a href="#A6">STAGE 4</a>
+            <a href="#A7">Bosses invulnerabilites</a>
+        </p>
+
+        <p class="p2">
+            <a href="#A8">CHEAT CODES</a>
+        </p>
+
+        <p class="p2">
+            <a href="#A9">WALKTHROUGH</a>
         </p>
 
         <p class="p3">
-            <a href="#A7">STAGE 5</a>
+            <a href="#A10">Stage 1</a>
         </p>
 
         <p class="p3">
-            <a href="#A8">STAGE 6</a>
+            <a href="#A11">Stage 2</a>
         </p>
 
         <p class="p3">
-            <a href="#A9">LOOP 2</a>
+            <a href="#A12">Stage 3</a>
+        </p>
+
+        <p class="p3">
+            <a href="#A13">Stage 4</a>
+        </p>
+
+        <p class="p3">
+            <a href="#A14">Stage 5</a>
+        </p>
+
+        <p class="p3">
+            <a href="#A15">Stage 6</a>
+        </p>
+
+        <p class="p3">
+            <a href="#A16">Loop 2</a>
         </p>
 
     </div>
