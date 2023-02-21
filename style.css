@@ -224,3 +224,20 @@ p.p4
 
     text-size-adjust: none;
 }
+
+/* new material for the pics */
+
+.pictures4 {
+    float: left;
+    width: 24.33%;
+    padding: 9px;
+  }
+
+/* this is for the text on the side of the picture */
+
+.imgright
+{
+    float: left;
+    margin: 0px 20px 5px 0px;
+
+}
