@@ -23,6 +23,8 @@
 
        <img src="gif/47.png" width="100%" height="auto">
 
+       <img src="gif2/C20.png" width="100%" height="auto">
+
 
 
 
