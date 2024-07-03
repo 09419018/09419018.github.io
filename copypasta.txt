@@ -19,11 +19,24 @@
     </div>
        
 
+       <div class="space"></div>
+
 
 
        <img src="gif/47.png" width="100%" height="auto">
 
        <img src="gif2/C20.png" width="100%" height="auto">
+
+  <img src="gif/ACT2.png" width="70px" height="14px">
+                        
+                        <div class="space"></div>
+                        <div class="space"></div>
+                        
+                        <img src="gif/RM2.png" width="100%" height="auto">
+
+                        <div class="space"></div>
+                        <div class="space"></div>
+
 
 
 
@@ -139,4 +152,18 @@ gosgos index:
 
     <div class="pictures4">
          <img src="gif/A1.png" width="100%" height="auto">
+    </div>
+
+
+
+
+
+
+
+     <div class="paper">
+
+        <p class="title" id="A1">
+            <b>GAME BASICS</b>
+        </p>
+
     </div>
