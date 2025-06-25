@@ -45,6 +45,33 @@
                     <b>STAGE 2</b>
                 </p>
 
+        VIDEO WITH CONTROLS 
+
+        <video width="100%" height="auto" controls >
+                <source src="gif/1.webm" type="video/webm">
+            </video>
+
+2 COLUMNS:
+
+ <div class="box-of-columns">
+
+                        <div class="column-twin">
+                            
+                                <img src="gif/45.png" width="210px" height="auto" style="margin-left: -10px; ">
+            
+                        </div>
+                        
+                        <div class="column-twin">
+                            <p style="margin-left: -120px; ">
+                                
+                                The heart count is displayed on the top right corner of the screen. You can pick up to 99 hearts. I will explain with more details each sub weapon, with their respective usage and item crash usage. I organized them from the least hearts that you require, to the one that requires the most, displaying the amount of hearts necessary for using them on the left, and the hearts required for the item crash on the right.  After this I will give you tips for enemies and which weapon is good against them in the ‘’enemies’’ section. 
+            
+                            </p>
+            
+                        </div>
+                        
+                    </div>
+
 
 
 gosgos index: 
