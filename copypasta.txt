@@ -21,7 +21,9 @@
 
        <div class="space"></div>
 
+       <img src="gif/29.png" width="30%" height="auto" style="margin-left: 270px;">
 
+style="margin-left: 30px;"
 
        <img src="gif/47.png" width="100%" height="auto">
 
@@ -70,7 +72,7 @@
             
                         </div>
                         
-                    </div>
+   </div>
 
 
 
@@ -194,3 +196,7 @@ gosgos index:
         </p>
 
     </div>
+
+     <p class="title">
+            <b>PSYCHO CANNON</b>
+              </p>
