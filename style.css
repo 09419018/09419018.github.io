@@ -246,3 +246,34 @@ p.p4
     width: 30.33%;
     padding: 20px;
   }
+
+  button { border-radius:5px; box-shadow:2px 2px 5px rgb(5,5,5); color:rgb(200,200,200); }
+
+.collapsible:hover { background-color: rgb(50,50,50); }
+
+.collapsible {
+    background-color: rgb(40,40,40);
+    color:rgb(220,220,220);
+    cursor: pointer;
+    padding: 18px;
+    width:100%;
+    border: none;
+    text-align: left;
+    font-weight: normal;
+    font-size:23px;
+    text-shadow:2px 2px 3px rgb(5,5,5);
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.45s ease-out;
+}
+
+
+
+
+
