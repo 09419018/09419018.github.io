@@ -165,6 +165,13 @@ img.center { margin:60px auto; display:block; }
 button { border-radius:5px; box-shadow:2px 2px 5px rgb(5,5,5); }
 button.deterministic { color:rgb(200,200,200); }
 button.nondeterministic { color:rgb(230,200,170); }
+button.map {
+    border:none;
+    padding:2px;
+    margin-left:20px;
+    width:auto;
+    font-size: 17px;
+}
 button.hybrid { color:rgb(170,200,230); }
 .collapsible:hover { background-color: rgb(50,50,50); }
 
