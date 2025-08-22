@@ -82,163 +82,96 @@
         <button type="button" class="collapsible deterministic">Evolutions</button>
         <div class="content">
 
-            <div class="space"></div>
+            <style>
+                #mainImage {
+                    
+                    max-width: 100%;
+                    height: auto;
+                }
+                #popup {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.8);
+                    justify-content: center;
+                    align-items: center;
+                }
+                #popup img {
+                    max-width: 80%;
+                    max-height: 80%;
+                }
+                #text{
+                color:red;position: absolute;cursor:pointer;
+                }
+            </style>
 
-            <img src="gif/chart.png" width="100%" height="auto">
-
-            <div class="space"></div>
-
-            
-            <div class="box-of-columns">
-
-                <div class="column-twin">
-
-                     <img src="gif/bota.png" width="90%" height="auto">
-
-                   
-  
-
+            <img id="mainImage" src="gif/chart.png" alt="Imagen principal">
+                <p id="demo" style=" color:red;position: absolute;margin-top:-600px;margin-left:320px;"> 1 </p>
+                <div id="popup">
+                <img src="gif/c1.png" alt="Imagen emergente" onmouseover='closeImage()'>
                 </div>
 
-                <div class="column-twin">
-
-                    
-
-                    <p>
-                Your digimon will evolve after a certain amount of time depending on the current form of your digimon. Every digimon has a life spawn of 360h (15 days) (Check basics > lifespawn for more info) This is how much they take until the next evolution:
-            </p>
-
-            <div class="space2"></div>
-
-            
-
-            <pre>Baby   🡆  in training = 6h</pre>
-            <pre style="margin-top:-15px;">In training   🡆  rookie = 24h</pre>
-            <pre style="margin-top:-15px;">Rookie  🡆  champion = 72h</pre>
-            <pre style="margin-top:-15px;">Champion  🡆  ultimate = 144h</pre>
-
-       
+                <script>
+                    let btn = document.getElementById("demo");
+                const mainImage = document.getElementById("mainImage");
+                const popup = document.getElementById("popup");
+                btn.onclick = function myFunction() {
+                popup.style.display = "flex";
+                }
+                function closeImage() {
+                popup.style.display = "none";
+                }
+                </script>
         
-            </div>
-
-                
-
-            </div>
-            
-            <div class="space"></div>
-
-            <p style="margin-left:27px;""><i>Note 1:	Any Rookie will be forced to evolve into Numemon after 96 hours or more.</i> </p>
-
-            <p style="margin-top:-10px; margin-left:27px;">
-                <i>Note 2:	Any Champion will evolve into Vademon at exactly 360 hours.</i>
-            </p>
-
-            <p style="margin-top:-10px; margin-left:27px;">
-                <i>Note 3:	After evolution, care mistakes and battles will reset to 0</i>
-            </p>
-
-            <div class="space"></div>
-
-         
 
 
-            
 
 
-            <p>
-                Your digimon will evolve into different digimon depending on certain requirements. These requirements are:
-            </p>
-
-              <p class="font2">
-                            Stats
-                        </p>
-
-                        <p class="font2" style="margin-top:-15px;">
-                            Care mistakes
-                        </p>
-
-                        <p class="font2" style="margin-top:-15px;">
-                            Weight : <a href="https://docs.google.com/spreadsheets/d/19E7zgE2JJN4LQnlv9TNzenTaeld5OcRzC99EkiM80Cw/edit?gid=0#gid=0" target="_blank" >Food and restaurant</a>
-                        </p>
-
-                        <p class="font2" style="margin-top:-15px;">
-                            Bonus
-                        </p>
-
-                        <div class="space2"></div>
-
-                        <p style="margin-left:27px;">
-                            <i>Note 1: You only need to fulfill 3 requirements to digievolve. For the bonus requirement (check 4 evolution tool) you only need to fulfill 1 of the conditions inside that box for it to work.</i>
-                        </p>
-
-                         <p>
-                               <p style="margin-top:-7px; margin-left:27px;"> <i>Note 2: After evolution the care mistakes and battles will be reset to 0. </i>
-                        </p>
-
-                        
-                         <p style="margin-top:-7px; margin-left:27px;"><i>Note 3: The moves dynamite kick and horizontal kick count as twice for the bonus requirement for evolution. </i></p>
-
-                        <div class="box">
-                            <p class="font2">
-                            You increase your stats by training your digimon or giving them an item (check training for more information).  Your digimon gains weight every time he eats food, and loses weight when he poops, gets tired or sleeps (food also gives energy). For bonus we have discipline, happiness, techniques learned, battles, and other special characteristics. Care mistakes means you didn't take care of your digimon needs.
-                        </p>
-                        </div>
-
-                        <h1>CARE MISTAKES</h1>
-
-                        <div class="space2"></div>
-
-                        <h2>
-                            Skip feeding
-                        </h2>
-
-                        <h2 style="margin-top:-7px;">Skip sleeping</h2>
-
-                        <h2 style="margin-top:-7px;">Not pooping in a toilet.</h2>
-
-                        <div class="space"></div>
-
-                        <p><i>EXCEPTION: If you sleep while your digimon is hungry or needs to poop you won't get a care mistake (next day the poop will be there, the virus bar will still increase)</i></p>
-
-                          <p style="margin-top:-7px;">
-                               <i>Note 1: If the starvation timer drops to 0 during a training session or while resting at
-	                            Punimon, Centarumon or Kuwagamon, you will get an additional care mistake. 
-                                 </i>
-                        </p>
-                      
-                  
 
 
-                       <div class="space"></div>
-
-                        <p>
-                            Here is this fantastic tool where you can introduce your digimon stats to see which digimon you will get and the requirements needed for evolving: <a href="https://phoenix-staffel.de/digimon/DigimonWorld/evolution.html" target="_blank" >Evolution tool</a></p> 
-                        </p>
-         
-                        <div class="space"></div>
-            
-
-            <img src="gif/evotool.png" width="100%" height="auto">
-
-            <p>
-                You introduce your current stats of your digimon on the yellow box, and it will highlight a digimon if you are eligible for evolving. You can hover over every requirement to see the specific value. These simbols mean: ≤ less or equal than (number),  ≥ greater or equal than (number)
-
-            </p>
-
-              
-
-                        
 
 
-            <div class="box">
 
-                <p class="font2">
-                    There are other means to evolve a digimon which are through items or special conditions. Check it out here: <a href="https://docs.google.com/document/d/1Z5-7RhC42F51EdXtMpzbOZ9QL8WKxPLhHh3_-XMDPdU/edit?tab=t.0" target="_blank" >Special conditions</a> // <a href="https://digiworldinfocenter.tripod.com/digiworld/digivolveitems.html" target="_blank" >Items</a>
-                </p>
 
-            </div>
 
-            <P>Some digimon have preferences for evolution (for example, if you have a biyomon you have more chances to evolve to birdramon. You can check this on the evolution tool, bonus requirement.</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </div>
@@ -771,21 +704,11 @@
                         Go back to drill tunnel and push the rock. You will find meramon at the end of the lava tunnel. Beat him and he will join the city. He opens the restaurant and the path to mt. panorama.
                     </p>
 
-                    <p><b>ITEMS:</b> Medicine, off. chip, protection, s.def</p>
-
-
-                    <p style="color: rgb(112, 152, 238);">
-                        <b>Drimogemon</b>
-                    </p>
-
                       <div class="box-of-columns">
 
                         <div class="column-twin">
-                            
-                            <video width="100%" height="auto"  controls >
-                            <source src="gif/23.webm" type="video/webm" >
-                            </video>
-                            
+
+                            <img src="gif/23.png" width="125%" height="auto" style="margin-left: -15px;">
 
                         </div>
 
@@ -793,7 +716,7 @@
 
                             <p style="margin-left:23px; margin-top:-6px;">
 
-                                Go back south of lava cave a couple of days later and talk to drimogemon to recruit him.
+                                There's medicine and off. chip in the same room. Now the lava will be gone so you can explore that area. You can find protection and s.def.disk. One of the baby digimons trades things for cards.
 
                             </p>
 
@@ -1044,8 +967,6 @@
                         If you win, gabumon will join the city. He will improve the treasure hunter shop that drimogemon opens.
                     </p>
 
-                    <div class="space"></div>
-
                      <video width="100%" height="auto"  controls >
                     <source src="gif/38.webm" type="video/webm" >
                     </video>
@@ -1078,16 +999,7 @@
                         Talk to Cherrymon and he will remove the fog. He will open the path to Toy town. <b>If numemon:</b> Get inside the left building and you will find a monzaemon plushie. Interact with it and your numemon will turn into monzaemon, an ultimate digimon.
                     </p>
 
-                   <p style="color: rgb(112, 152, 238);">
-                        <b>Kokatorimon</b>
-                    </p>
-
-                    <img src="gif/kokatorimon.png" width="100%" height="auto">
-
-                    <p>
-                        You can find kokatorimon there early in the morning. Be prepared, he is very strong so I recommend coming here later. <b>Drops def.chip.</b>
-                    </p>
-
+                  
                     
 
                     <video width="100%" height="auto"  controls >
@@ -1098,29 +1010,9 @@
                         Leave toy town and head east. We are going to go to great canyon through freezeland, to recruit birdramon and unlock freezeland as travel point for birdra transport at the same time. You can cheese many enemies on the way. 
                     </p>
 
-                    
+                    <div class="space"></div>
 
-                
-
-                   
-
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-          <button type="button" class="collapsible deterministic">Great canyon</button>
-        <div class="content">
-
-             <div class="box-of-columns">
-
-                <div class="column-twin">
-
-                          <p style="color: rgb(112, 152, 238);">
+                      <p style="color: rgb(112, 152, 238);">
                         <b>Birdramon</b>
                     </p>
 
@@ -1133,302 +1025,18 @@
                         Once you get to great canyon, press the elevator <b>UP</b>. Heal before you stand on the nest. Birdramon will appear and wants to put on a fight! When you beat birdramon you will get teleported to file city for free!
                     </p>
 
-                    <p>
-                        Talk to yuramon outside jijimon's house about the great bandits at great canyon. Use birdra transport (1000 bits). 
-                    </p>
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>Ogremon</b>
-                    </p>
-
-                    <p>
-                        To recruit ogremon you will have to fight him 4 times in different locations in this order: great canyon intersection - ogremon fortress - secret beach cave (freezeland) - drill tunnel
-                    </p>
-
-                    <video width="100%" height="auto"  controls >
-                <source src="gif/43.webm" type="video/webm" >
-                </video>
-
-                <p>
-                    <b>(Ogremon 1)</b> Once you get to the goburimons screen, they will be gone. If you try to cross you will get raided by ogremon and two agumons. Using spinning shot for damage in area is enough. Optionally megalo spark / thunder justice. Once you beat them, they will move to the next area: ogremon's fortress.
-                </p>
-
-                   <video width="100%" height="auto"  controls >
-                    <source src="gif/44.webm" type="video/webm" >
-                    </video>
-            
-                    <p>
-                        The elevator down is broken. If you go back and step two times on that rock you will fall down to the bottom area.
-                    </p>
-
-                    
-                   <video width="100%" height="auto"  controls >
-                    <source src="gif/45.webm" type="video/webm" >
-                    </video>
-            
-                    <p>
-                        <b>(Ogremon 2):</b>Find the elevator and press up to unlock the elevator. Go back down and enter ogremon's fortress by talking to agumon.
-                    </p>
-
-                    <div class="space2"></div>
-
-                    <p><i>Fun facts: in most of the european versions, you can't interact with agumon so they sold copies of an unbeatable game.</i></p>
-
-                    <div class="space"></div>
-
-                     <video width="100%" height="auto"  controls >
-                    <source src="gif/46.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        Ignore all the items and dodge the enemies from both screens. You will reach a screen with three agumons. Talk to them and fight them so they get away from the door.
-                    </p>
-
-                 
-
-                    
 
 
-                </div>
-
-                <div class="column-twin">
-
-                    <div class="space"></div>
-                    <div class="space"></div>
-                    <div class="space"></div>
-
-                        <video width="100%" height="auto"  controls >
-                    <source src="gif/47.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        Cross the screen. You can dodge those two agumons by walking on the left side. Get close to ogremon and you will start a fight against him and both agumons.
-                    </p>
-
-                    <p>Ogremon drops <b>HP CHIP</b> </p>
-
-                    <p style="color: rgb(112, 152, 238);">
-                        <b>Shellmon</b>
-                    </p>
-                    
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/48.webm" type="video/webm" >
-                    </video>
-
-                    <p><b>GOBURIMON SKIP:</b></p>
-
-                    <p>
-                        Press the elevator and go past the bridge to the left. You will arrive at a screen with a goburimon blocking the bridge. Press pause to align the character on the mark of the bridge that looks like a rail and hold diagonal up. Once you touch the wall you will get moved and locked in place. Pause again and hold left the entire time until you collide with the wall of the bridge. Then still holding left, mash up and you will skip the goburimon. For more info youtube video: <a href="https://youtu.be/5_10-edmyHw?si=XoT3SFGCLNuG6cTj&t=204" target="_blank" >Goburimon skip</a>
-                    </p>
-
-                    <p>
-                        When you are about to cross the bridge a text window will pop up. Shellmon will talk about a strange mechanism.
-                    </p>
 
 
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/49.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        You will have to go back and press the elevator down, make it all the way back from ogremon's fortress through the entrance door. Sadly you can't avoid fighting goburimon from this angle. There won't be enemies in the fortress anymore, so it's time to pick up all the items. That door will now be open. You can find these items in the fortress:
-                    </p>
-
-                  
-
-                    
 
 
-                     <div class="box-of-columns">
-
-                        <div class="column-twin">
-
-                            <img src="gif/50.png" width="125%" height="auto" >
-
-
-                            
-
-                        </div>
-
-                        <div class="column-twin">
-
-                            
-                            <p style="margin-left:50px;"><b>- Portable potty</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- Def. chip (x2)</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- Off. chip</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- S. off. disk</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- Sirloin</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- Auto pilot</b></p>
-                            <p style="margin-top:-10px; margin-left:50px;"><b>- Double flop</b></p>
-
-                            
-
-                        </div>
-
-                    </div>
-
-                    <p>
-                        Now exit the fortress from the entrance door:
-                    </p>
-
-                     <video width="100%" height="auto"  controls >
-                    <source src="gif/51.webm" type="video/webm" >
-                    </video>
-                    
-                    <p>
-                        Get to the elevator and press ''hit up''. Close the bridge to the left to freezeland and exit freezeland from the other bridge. You will find shelmon, talk to him and he will join the city. He unlocks the bulleting board on file city, which contains hints and rumours. The item by his side is  <b>DEF. CHIP</b>.
-                    </p>
-                    
 
                 </div>
 
             </div>
 
 
-        </div>
-
-        <button type="button" class="collapsible deterministic">MONOCHROMON STORE</button>
-        <div class="content">
-
-        </div>
-
-                <button type="button" class="collapsible deterministic">Freezeland</button>
-        <div class="content">
-
-             <div class="box-of-columns">
-
-                <div class="column-twin">
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>Whamon</b>
-                        </p>
-                    
-
-                     <video width="100%" height="auto"  controls >
-                    <source src="gif/52.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        <b>(Ogremon 3)</b> Cross all the way in freezeland to find whamon waiting inside the water (yuramon talks about whamon but it's not necessary to talk to him about it to find him). If you talk to him he will carry you to the secret beach cave.
-                    </p>
-
-                       <video width="100%" height="auto"  controls >
-                    <source src="gif/53.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        Ogremon brings waruseadramon with him this time and you will have to fight both of them and a gabumon. Use spining shot, thunder justice and megalo spark. He won't join the city yet! Whamon will give you a ride to file city (In my case he didn't give me a ride, I still don't know why). Whamon joins the city!
-                    </p>
-
-                    <p>
-                        <b>(Ogremon 4)</b> You will find ogremon at drill tunnel, fight him and he will finally join the city. He patrols the town. <b>Drops HP chip.</b>
-                    </p>
-                    
-                    <img src="gif/54.png" width="100%" height="auto">
-
-                    <p>
-                        You can find whamon at the water place between birdra transport and tanemon-palmon's meat farm. He can carry you to factory town and secret beach.
-                    </p>
-
-                    <p><i>Go back to the secret beach cave to find mysty egg, an item that can turn any digimon into digitamamon (It doesn't work on ultimates)</i></p>
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>Penguinmon</b>
-                    </p>
-                    
-                       <video width="100%" height="auto"  controls >
-                    <source src="gif/60.webm" type="video/webm" >
-                    </video>
-                    
-                        <p>
-                            Go southeast to find penguinmon. He will challenge you to a curling match. The first match is for free, but if you lose, you will have to feed penguinmon a fish to try again, so save beforehand.
-                        </p>
-
-                       <video width="100%" height="auto"  controls >
-                        <source src="gif/61.webm" type="video/webm" >
-                        </video>
-
-                        <p>
-                            The stones you get are RNG. You want the stone that has spikes so you could reload if you don't have it. The spikes stone gets locked in place so throw it at that speed towards the left ring, which gives more points, so then that ring is unnaccesible for penguinmon. Then you want to use small stones to kick his stones out of the ring in the middle, and finally use the biggest stones to get your position inside the middle ring.
-                        </p>
-
-
-                </div>
-
-                <div class="column-twin">
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <button type="button" class="collapsible deterministic">ICE SANCTUARY</button>
-        <div class="content">
-
-              <div class="box-of-columns">
-
-                <div class="column-twin">
-
-                     <p>The ice sanctuary is located to the west. To enter you need a vaccine type digimon, but you can enter the sanctuary with any kind of digimon with a trick.</p>
-
-                    <img src="gif/sanct.png" width="100%" height="auto">
-
-                   <div class="space"></div>
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/s1.webm" type="video/webm" >
-                    </video>
-
-                     <p>
-                                Walk diagonally until you hit the wall. Then hold up and align the character's hat with the end of the lighter wall. Pause and hold diagonal and you will enter. You can reposition tapping back and then forward
-                            </p>
-
-                    
-
-
-                  
-                </div>
-
-                <div class="column-twin">
-
-                       <p style="color: rgb(112, 152, 238);">
-                        <b>Angemon</b>
-                        </p>
-
-                         <video width="100%" height="auto"  controls >
-                        <source src="gif/s3.webm" type="video/webm" >
-                        </video>
-
-                        <p>
-                            Get close to the statue until the text box appears. Move in circles a bit until your digimon moves the ice block. There's an invisible wall to the right. Pick the teleporter in front of you. You can cheese the enemies that way. On the next screen, pick the teleporter that's up right. You will have to fight three digimon (luckily one runs away).
-                        </p>
-
-                          <video width="100%" height="auto"  controls >
-                        <source src="gif/s4.webm" type="video/webm" >
-                        </video>
-
-                        <p>
-                            Once you beat them, pick the blue light sphere and exit the room. Pick the teleporter that's up left. It will teleport you to the ice block statue entrance. Enter the next screen and come back so angemon appears and joins the city! He will give you hints.
-                        </p>
-
-                        <div class="space2"></div>
-
-                        <p><b>ITEMS YOU CAN FIND:</b></p>
-
-                        <div class="box">
-                            <p class="font2">
-                                Medicine - Omni disk - Omni potent - Restore - Large recovery - Sup. recovery - Large MP 
-                            </p>
-                        </div>
-
-               
-
-                </div>
-
-            </div>
 
         </div>
 
@@ -1566,171 +1174,161 @@
         <button type="button" class="collapsible deterministic">Dino region</button>
         <div class="content">
 
-            <div class="box-of-columns">
-
-                <div class="column-twin">
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>Tyranommon</b>
-                    </p>
-
-
-                     <video width="100%" height="auto"  controls >
-                        <source src="gif/62.webm" type="video/webm" >
-                        </video>
-
-                        <p>
-                            Cross amida forest and you will encounter tyranommon. Fight him and he will go away.
-                        </p>
-
-                        <video width="100%" height="auto"  controls >
-                        <source src="gif/63.webm" type="video/webm" >
-                        </video>
-
-                        <p>
-                            He talks about a meteorite that you should get rid of. You can enter now ancient speedy region. Time goes faster in there so try to be quick. There's a secret path to the left when you arrive to the giant dinosayr skeleton. You will find a digimon, press ''crack it and check'' to fight him, defeat him and he will run away.
-                        </p>
-
-
-                        
-
-
-                </div>
-
-                <div class="column-twin">
-
-                    <div class="space"></div>
-                    <div class="space"></div>
-
-                    <p>
-                            Go back where you came from and talk to tyranommon. He will join the city and will help at the restaurant. On the way back you can get moldy meat from that vending machine. It's called 'steak'. We will use it later to recruit frigimon.
-                        </p>
-
-                        <img src="gif/64.png" width="90%" height="auto">
-
-                </div>
-
-            </div>
-
         </div>
 
-        <button type="button" class="collapsible deterministic">Factory town</button>
+
+
+
+
+
+
+
+
+        <button type="button" class="collapsible deterministic">Great canyon</button>
         <div class="content">
 
-            
-            <div class="box-of-columns">
+             <div class="box-of-columns">
 
                 <div class="column-twin">
 
+                    <p>
+                        Talk to yuramon outside jijimon's house about the great bandits at great canyon. Use birdra transport (1000 bits). 
+                    </p>
+
                      <p style="color: rgb(112, 152, 238);">
-                        <b>Andromon</b>
+                        <b>Ogremon</b>
                     </p>
 
                     <p>
-                        To recruit andromon you have to beat giromon so the sewers are back to normal so you can recruit numemon. 
+                        To recruit ogremon you will have to fight him 4 times in different locations in this order: great canyon intersection - ogremon fortress - secret beach cave (freezeland) - drill tunnel
                     </p>
 
                     <video width="100%" height="auto"  controls >
-                    <source src="gif/66.webm" type="video/webm" >
+                <source src="gif/43.webm" type="video/webm" >
+                </video>
+
+                <p>
+                    <b>(Ogremon 1)</b> Once you get to the goburimons screen, they will be gone. If you try to cross you will get raided by ogremon and two agumons. Using spinning shot for damage in area is enough. Optionally megalo spark / thunder justice. Once you beat them, they will move to the next area: ogremon's fortress.
+                </p>
+
+                   <video width="100%" height="auto"  controls >
+                    <source src="gif/44.webm" type="video/webm" >
+                    </video>
+            
+                    <p>
+                        The elevator down is broken. If you go back and step two times on that rock you will fall down to the bottom area.
+                    </p>
+
+                    
+                   <video width="100%" height="auto"  controls >
+                    <source src="gif/45.webm" type="video/webm" >
+                    </video>
+            
+                    <p>
+                        <b>(Ogremon 2):</b>Find the elevator and press up to unlock the elevator. Go back down and enter ogremon's fortress by talking to agumon.
+                    </p>
+
+                    <p><i>Fun facts: in most of the european versions, you can't interact with agumon so they sold copies of an unbeatable game.</i></p>
+
+                     <video width="100%" height="auto"  controls >
+                    <source src="gif/46.webm" type="video/webm" >
                     </video>
 
                     <p>
-                        Talk to whamon so you can enter factory town. There will be two digimons stopping you from entering.
+                        Ignore all the items and dodge the enemies from both screens. You will reach a screen with three agumons. Talk to them and fight them so they get away from the door.
                     </p>
 
-                      <div class="box-of-columns">
+                     <video width="100%" height="auto"  controls >
+                    <source src="gif/47.webm" type="video/webm" >
+                    </video>
+
+                    <p>
+                        Cross the screen. You can dodge those two agumons by walking on the left side. Get close to ogremon and you will start a fight against him and both agumons.
+                    </p>
+
+                    <p>Ogremon drops <b>HP CHIP</b> </p>
+
+                    
+
+
+                </div>
+
+                <div class="column-twin">
+
+                    <p style="color: rgb(112, 152, 238);">
+                        <b>Shellmon</b>
+                    </p>
+                    
+
+                    <video width="100%" height="auto"  controls >
+                    <source src="gif/48.webm" type="video/webm" >
+                    </video>
+
+                    <p><b>GOBURIMON SKIP:</b></p>
+
+                    <p>
+                        Press the elevator and go past the bridge to the left. You will arrive at a screen with a goburimon blocking the bridge. Press pause to align the character on the mark of the bridge that looks like a rail and hold diagonal up. Once you touch the wall you will get moved and locked in place. Pause again and hold left the entire time until you collide with the wall of the bridge. Then still holding left, mash up and you will skip the goburimon. For more info youtube video: <a href="https://youtu.be/5_10-edmyHw?si=XoT3SFGCLNuG6cTj&t=204" target="_blank" >Goburimon skip</a>
+                    </p>
+
+                    <p>
+                        When you are about to cross the bridge a text window will pop up. Shellmon will talk about a strange mechanism.
+                    </p>
+
+
+                    <video width="100%" height="auto"  controls >
+                    <source src="gif/49.webm" type="video/webm" >
+                    </video>
+
+                    <p>
+                        You will have to go back and press the elevator down, make it all the way back from ogremon's fortress through the entrance door. Sadly you can't avoid fighting goburimon from this angle.
+                    </p>
+
+                    
+
+                    <p>
+                        There won't be enemies in the fortress anymore, so it's time to pick up all the items. That door will now be open. You can find these items in the fortress:
+                    </p>
+
+                    <img src="gif/50.png" width="100%" height="auto" >
+
+
+                     <div class="box-of-columns">
 
                         <div class="column-twin">
 
-                            <img src="gif/12am.png" width="80%" height="auto">
+                            <p><b>- Portable potty</b></p>
+                            <p style="margin-top:-10px;"><b>- Def. chip (x2)</b></p>
+                            <p style="margin-top:-10px;"><b>- Off. chip</b></p>
+                            <p style="margin-top:-10px;"><b>- S. off. disk</b></p>
+                            <p style="margin-top:-10px;"><b>- Sirloin</b></p>
+                            <p style="margin-top:-10px;"><b>- Auto pilot</b></p>
+                            <p style="margin-top:-10px;"><b>- Double flop</b></p>
+
+                            
 
                         </div>
 
                         <div class="column-twin">
 
-                            <img src="gif/12pm.png" width="80%" height="auto">
+                            
 
                         </div>
 
                     </div>
 
                     <p>
-                        The digimons will be gone at 12am and 12pm. Once you make it inside the building they will be gone forever.
-                    </p>
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/67.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        You can cheese the digimon if you walk close to the left platform. You can find HP chip and MP chip. Cheese the numemon by walking on the left edge. Enter the room and you will have to fight giromon.
-                    </p>
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/68.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        After beating giromon, you can go to the room on top. Cheese the digimon by walking on the left edge both in and out. Items: Brain chip, auto pilot, def. chip. Exit and talk to andromon to stop the gas at the sewers.
-                    </p>
-
-                
-
-
-
-                </div>
-
-                <div class="column-twin">
-
-                    <div class="space2"></div>
-
-                         <p style="color: rgb(112, 152, 238);">
-                        <b>Numemon</b>
-                    </p>
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/69.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        Go back to the sewers after andromon stops the gas machine and fight numemon. He will join the city afterwards. He unlocks the secret shop and sells enemy bell and enemy repel.
-                    </p>
-
-                    <p>
-                        Now go back and talk to andromon and he will say that he needs some time to repair. Once you have visited the large shop, the arena, the hospital and the restaurant in file city go back and talk to andromon a couple of times and he will join the city. He stands outside birdra transport.
-                    </p>
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>Giromon</b>
+                        Now exit the fortress from the entrance door:
                     </p>
 
                      <video width="100%" height="auto"  controls >
-                    <source src="gif/70.webm" type="video/webm" >
+                    <source src="gif/51.webm" type="video/webm" >
                     </video>
-
+                    
                     <p>
-                        After talking to andromon (you don't need to recruit andromon) go back to where giromon was and talk to him.  He will join the city, unlocks the jukebox in the restaurant.
+                        Get to the elevator and press ''hit up''. Close the bridge to the left to freezeland and exit freezeland from the other bridge. You will find shelmon, talk to him and he will join the city. He unlocks the bulleting board on file city, which contains hints and rumours. The item by his side is a def. chip.
                     </p>
+                    
 
-                    <p>
-                        <i>Fun fact: in NTSC versions the jukebox is bugged and causes your game to crash!</i>
-                    </p>
-
-                    <div class="space2"></div>
-
-                     <p style="color: rgb(112, 152, 238);">
-                        <b>MetalMamemon</b>
-                    </p>
-
-                    <p><i>Random encounter (Ultimate, very strong!!)</i></p>
-
-                    <video width="100%" height="auto"  controls >
-                    <source src="gif/71.webm" type="video/webm" >
-                    </video>
-
-                    <p>
-                        Enter factorial town from the pier in the back of the corner over and over and eventually metalmamemon will stand there. Defeat him and he will join the city. Becomes an alternative curling opponent.
-                    </p>
 
 
 
@@ -1742,21 +1340,144 @@
 
         </div>
 
-        <button type="button" class="collapsible deterministic">Piximon, mamemon, ninjamon, etemon</button>
+        <button type="button" class="collapsible deterministic">Freezeland</button>
         <div class="content">
+
+             <div class="box-of-columns">
+
+                <div class="column-twin">
+
+                     <p style="color: rgb(112, 152, 238);">
+                        <b>Whamon</b>
+                        </p>
+                    
+
+                     <video width="100%" height="auto"  controls >
+                    <source src="gif/52.webm" type="video/webm" >
+                    </video>
+
+                    <p>
+                        <b>(Ogremon 3)</b> Cross all the way in freezeland to find whamon waiting inside the water (yuramon talks about whamon but it's not necessary to talk to him about it to find him). If you talk to him he will carry you to the secret beach cave.
+                    </p>
+
+                       <video width="100%" height="auto"  controls >
+                    <source src="gif/53.webm" type="video/webm" >
+                    </video>
+
+                    <p>
+                        Ogremon brings waruseadramon with him this time and you will have to fight both of them and a gabumon. Use spining shot, thunder justice and megalo spark. He won't join the city yet! Whamon will give you a ride to file city (In my case he didn't give me a ride, I still don't know why). Whamon joins the city!
+                    </p>
+
+                    <p>
+                        <b>(Ogremon 4)</b> You will find ogremon at drill tunnel, fight him and he will finally join the city. He patrols the town.
+                    </p>
+                    
+                    <img src="gif/54.png" width="100%" height="auto">
+
+                    <p>
+                        You can find whamon at the water place between birdra transport and tanemon-palmon's meat farm. He can carry you to factory town and secret beach.
+                    </p>
+
+                    <p><i>Go back to the secret beach cave to find mysty egg, an item that can turn any digimon into digitamamon (It doesn't work on ultimates)</i></p>
+
+                     <p style="color: rgb(112, 152, 238);">
+                        <b>Penguinmon</b>
+                    </p>
+                    
+                       <video width="100%" height="auto"  controls >
+                    <source src="gif/60.webm" type="video/webm" >
+                    </video>
+                    
+                        <p>
+                            Go southeast to find penguinmon. He will challenge you to a curling match. The first match is for free, but if you lose, you will have to feed penguinmon a fish to try again, so save beforehand.
+                        </p>
+
+                       <video width="100%" height="auto"  controls >
+                        <source src="gif/61.webm" type="video/webm" >
+                        </video>
+
+                        <p>
+                            The stones you get are RNG. You want the stone that has spikes so you could reload if you don't have it. The spikes stone gets locked in place so throw it at that speed towards the left ring, which gives more points, so then that ring is unnaccesible for penguinmon. Then you want to use small stones to kick his stones out of the ring in the middle, and finally use the biggest stones to get your position inside the middle ring.
+                        </p>
+
+
+                </div>
+
+                <div class="column-twin">
+
+                </div>
+
+            </div>
+
 
         </div>
 
+        <button type="button" class="collapsible deterministic">ICE SANCTUARY</button>
+        <div class="content">
+
+              <div class="box-of-columns">
+
+                <div class="column-twin">
+
+                     <p>The ice sanctuary is located to the west. To enter you need a vaccine type digimon, but you can enter the sanctuary with any kind of digimon with a trick.</p>
+
+                    <img src="gif/sanct.png" width="100%" height="auto">
+
+                   <div class="space"></div>
+
+                    <video width="100%" height="auto"  controls >
+                    <source src="gif/s1.webm" type="video/webm" >
+                    </video>
+
+                     <p>
+                                Walk diagonally until you hit the wall. Then hold up and align the character's hat with the end of the lighter wall. Pause and hold diagonal and you will enter. You can reposition tapping back and then forward
+                            </p>
+
+                    
 
 
+                  
+                </div>
 
+                <div class="column-twin">
 
+                       <p style="color: rgb(112, 152, 238);">
+                        <b>Angemon</b>
+                        </p>
 
-      
+                         <video width="100%" height="auto"  controls >
+                        <source src="gif/s3.webm" type="video/webm" >
+                        </video>
 
+                        <p>
+                            Get close to the statue until the text box appears. Move in circles a bit until your digimon moves the ice block. There's an invisible wall to the right. Pick the teleporter in front of you. You can cheese the enemies that way. On the next screen, pick the teleporter that's up right. You will have to fight three digimon (luckily one runs away).
+                        </p>
 
+                          <video width="100%" height="auto"  controls >
+                        <source src="gif/s4.webm" type="video/webm" >
+                        </video>
 
-        
+                        <p>
+                            Once you beat them, pick the blue light sphere and exit the room. Pick the teleporter that's up left. It will teleport you to the ice block statue entrance. Enter the next screen and come back so angemon appears and joins the city! He will give you hints.
+                        </p>
+
+                        <div class="space2"></div>
+
+                        <p><b>ITEMS YOU CAN FIND:</b></p>
+
+                        <div class="box">
+                            <p class="font2">
+                                Medicine - Omni disk - Omni potent - Restore - Large recovery - Sup. recovery - Large MP 
+                            </p>
+                        </div>
+
+               
+
+                </div>
+
+            </div>
+
+        </div>
 
      
 

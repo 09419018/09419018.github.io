@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border: 2px solid black;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+<img id="myImage" src="gif/chart.png" width="auto">
+
+
+<div id="popup">
+      <img onclick="closePopup()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZ0lEQVR4nO2aS27CQAyG/0s0AnqkcJF23ccB6LXgEGXRcxS6oCtXQX+kKEphXvEY4U+KxMIT+dM8PJEBHMdJZQ1gC+AHgFR+jsyljZX4MJC8/PNsYmaiG3AC8AJgifosAbwyJwmdmR2DOwlrvDG3bpld5cjgBeyxYG6HkOB+LVpFQvNzESXERYwhLnKFJwAN0mn4jlBmEXlm7D5RpuFY4buqiTwA+GT8V+R1Zjw2tADPtrRSZFIlZt/sMTI5EiqnVohMroTa8XtJpoSEah2ZkikloV4Qh8fqfvQ7p+ZUqezDWSgxE6ZESnw2iy+tSKY2ds4NwMTxO9wTpWREuyBObewSMqJ5Rbl0OuXKiNalMeSIzZERjWt8TJ1IlRH/sLqHT90aiIsYQ1zEGHJ3IgcGWmi5jXlkbt8IYMvgrmdnjfeY1lvL4BN7divUZ0WJX+YW3KbeDNbizbane1pOYd8cvck/DDiOgzN/y6mTEbxodPIAAAAASUVORK5CYII=" alt="close-window--v1">
+
+  <img id="popup-image" src="" alt="Popup Image" style="max-width: 100%; height: auto;">
+  
+  
+</div>
+
+<script>
+const clickableAreas = [
+  { name: 'Cacamon', x1: 130, y1: 189,     image: 'gif/c1.png' },
+  { name: 'Middle box',  x1: 300, y1: 200, image: 'gif/c1.png' },
+  { name: 'Bottom box',  x1: 200, y1: 400, image: 'gif/c1.png' }
+];
+
+
+const img = document.getElementById('myImage');
+
+
+img.addEventListener('click', function(event) {
+  // Find click position relative to image
+  const rect = img.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+
+//   let found = false;
+  for (const area of clickableAreas) {
+    if (x >= area.x1 && x <= area.x1 + 86 && y >= area.y1 && y <= area.y1 + 85) {
+      showPopup(area.image);
+    //   found = true;
+      break;
+    }
+  }
+
+//   if (!found) {
+//     showPopup(`Clicked at (${x}, ${y}) — no special action`);
+//   }
+});
+
+
+function showPopup(image) {
+  document.getElementById('popup-image').src = image;
+  document.getElementById('popup').style.display = 'block';
+  document.getElementById('popup').style.flexDirection = 'column';
+}
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
